@@ -1,0 +1,16 @@
+name: Pull Request To Dev
+run-name: Run Integration Tests
+on:
+  push:
+    branches:
+      - dev
+jobs:
+  run:
+    name: Run  app.cpp
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Run test
+        run: source tests/unit-test.sh
