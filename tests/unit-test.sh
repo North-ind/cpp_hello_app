@@ -3,7 +3,10 @@
 
 
 g++ -o—app app.cpp
-OUTPUT=$(../app)
+#OUTPUT=$(../app)
+
+ls
+
 if echo "$OUTPUT" | grep -q "$(date +%Y-%m-%d)"; then
 	echo  "Udacha"
 else
