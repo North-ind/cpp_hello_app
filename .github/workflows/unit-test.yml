@@ -12,5 +12,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+      - name: Give chmod
+        run: chmod +x app.cpp
       - name: Run test
         run: source tests/unit-test.sh
