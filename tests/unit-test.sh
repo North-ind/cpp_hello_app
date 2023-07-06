@@ -2,7 +2,7 @@
 
 cd ..
 
-g++ -o Ñapp cpp.cpp
+g++ -o Ñapp app.cpp
 OUTPUT=$(app)
 if echo "$OUTPUT" | grep -q "$(date +%Y-%m-%d)"; then
 	echo  "Udacha"
