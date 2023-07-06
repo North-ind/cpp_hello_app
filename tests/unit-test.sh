@@ -1,7 +1,9 @@
 #!/bin/bash
 
-g++ -o Ñ./tests/app ./app.cpp
-OUTPUT=$(/tests/app)
+cd ..
+
+g++ -o Ñapp cpp.cpp
+OUTPUT=$(app)
 if echo "$OUTPUT" | grep -q "$(date +%Y-%m-%d)"; then
 	echo  "Udacha"
 else
